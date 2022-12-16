@@ -23,7 +23,6 @@ public class Game : IGame
     public void Start()
     {
         int number = _randomNumberGenerator.Get(_rangeMin, _rangeMax);
-        Console.WriteLine(number);
 
         for (int i = 0; i < _maxAttemptCount; i++)
         {

@@ -10,6 +10,7 @@ using IHost host = Host.CreateDefaultBuilder(args)
         .AddTransient<IGameOutputWriter, GameInputOutputConsole>()
         .AddTransient<IRandomNumberGenerator, RandomNumberGenerator>()
         .AddTransient<ISettingProvider, SettingProvider>()
+        .AddTransient<IUserInputReader, GameInputOutputConsole>()
         .AddTransient<IGame, Game>())
     .Build();
 
